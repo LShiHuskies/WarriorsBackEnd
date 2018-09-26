@@ -54,6 +54,7 @@ class Api::SessionsController < ApplicationController
 
     if @user && @user.authenticate(params[:password])
       # payload = { username: params['username'], id: @user.id }
+      
       render json: {
         username: @user.username,
         id: @user.id,
