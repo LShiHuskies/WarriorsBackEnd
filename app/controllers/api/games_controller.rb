@@ -84,7 +84,7 @@ class Api::GamesController < ApplicationController
   end
 
   def create
-    
+
 
     @game = Game.new
     # @user = User.find_by(id: params[:user][:id])

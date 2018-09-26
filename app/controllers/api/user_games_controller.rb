@@ -15,11 +15,11 @@ class Api::UserGamesController < ApplicationController
       render json: {
         id: @userGame.id
       }
-    else
-      render json: {
-        id: @userGame.id
-      }
-    end
+    # else
+    #   render json: {
+    #     id: @userGame.id
+    #   }
+    # end
 
   end
 
