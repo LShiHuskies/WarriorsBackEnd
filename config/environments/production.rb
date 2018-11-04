@@ -85,7 +85,7 @@ Rails.application.configure do
 
   config.web_socket_server_url = "wss://warriorbackend.herokuapp.com/cable"
 
-  config.action_cable.allowed_request_origins = ['https://intense-waters-55861.herokuapp.com', 'http://intense-waters-55861.herokuapp.com']
+  config.action_cable.allowed_request_origins = ['https://warriorbackend.herokuapp.com', 'http://warriorbackend.herokuapp.com']
 
   if ENV["RAILS_LOG_TO_STDOUT"].present?
     logger           = ActiveSupport::Logger.new(STDOUT)
