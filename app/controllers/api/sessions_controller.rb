@@ -53,7 +53,7 @@ class Api::SessionsController < ApplicationController
     # puts 'whats up'
 
     # if @user && @user.authenticate(params[:password])
-    if @user
+    if @user && @user.authenticate(params[:password])
       # payload = { username: params['username'], id: @user.id }
 
       render json: {
