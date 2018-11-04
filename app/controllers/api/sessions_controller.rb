@@ -41,7 +41,7 @@ class Api::SessionsController < ApplicationController
 
 
     @user = User.find_by(username: params['username'])
-
+    byebug
 
     # payload = { username: params['username'], id: @user.id }
     secret_key = secret_key()
@@ -54,7 +54,7 @@ class Api::SessionsController < ApplicationController
 
     if @user && @user.authenticate(params[:password])
       # payload = { username: params['username'], id: @user.id }
-      
+
       render json: {
         username: @user.username,
         id: @user.id,
