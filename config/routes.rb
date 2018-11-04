@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     resources :user_games
     resources :moves
     resources :move_twos
-    mount ActionCable.server => '/cable'
   end
 
+  mount ActionCable.server => '/cable'
 end
