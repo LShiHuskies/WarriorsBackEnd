@@ -52,7 +52,8 @@ class Api::SessionsController < ApplicationController
     # puts token
     # puts 'whats up'
 
-    if @user && @user.authenticate(params[:password])
+    # if @user && @user.authenticate(params[:password])
+    if @user
       # payload = { username: params['username'], id: @user.id }
 
       render json: {
