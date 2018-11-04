@@ -8,3 +8,16 @@ production:
   adapter: redis
   url: <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" } %>
   channel_prefix: WarriorsBackEnd_production
+
+
+
+development:
+  adapter: async
+
+test:
+  adapter: async
+
+production:
+  adapter: redis
+  url: redis://redistogo:37f4645ae3afb490d4d1151e9b506228@spinyfin.redistogo.com:11261/
+  channel_prefix: warriorbackend_production
