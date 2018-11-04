@@ -76,8 +76,8 @@
 
 class Api::UsersController < ApplicationController
 
-    # before_action :requires_login, only: [:index, :show, :users_games]
-    # before_action :is_admin, only: [:index]
+    before_action :requires_login, only: [:index, :show, :users_games]
+    before_action :is_admin, only: [:index]
 
   def index
 

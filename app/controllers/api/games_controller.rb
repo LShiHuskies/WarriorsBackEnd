@@ -60,7 +60,7 @@
 
 class Api::GamesController < ApplicationController
 
-  # before_action :requires_login, only: [:index]
+  before_action :requires_login, only: [:index]
 
 
 
