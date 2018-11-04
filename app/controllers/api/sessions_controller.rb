@@ -41,7 +41,7 @@ class Api::SessionsController < ApplicationController
 
 
     @user = User.find_by(username: params['username'])
-    byebug
+
 
     # payload = { username: params['username'], id: @user.id }
     secret_key = secret_key()
