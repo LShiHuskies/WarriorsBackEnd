@@ -47,7 +47,7 @@ Rails.application.configure do
   # config.action_cable.allowed_request_origins = [ 'http://example.com', /http:\/\/example.*/ ]
 
   config.web_socket_server_url = "wss://warriorbackend.herokuapp.com/cable"
-  config.action_cable.allowed_request_origins = ['https://intense-waters-55861.herokuapp.com']
+  config.action_cable.allowed_request_origins = ['https://intense-waters-55861.herokuapp.com', 'http://intense-waters-55861.herokuapp.com']
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
   # config.force_ssl = true
